@@ -15,7 +15,6 @@ from bqsang import views
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
     
     path('donor/', include('donor.urls')),
