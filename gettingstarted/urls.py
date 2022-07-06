@@ -4,7 +4,6 @@ from django.contrib import admin
 
 admin.autodiscover()
 
-import hello.views
 from django.contrib.auth.views import LogoutView,LoginView
 from bqsang import views
 # To add a new path, first import the app:
