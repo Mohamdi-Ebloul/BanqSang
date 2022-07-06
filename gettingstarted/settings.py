@@ -41,10 +41,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-  
      'bqsang',
     'donor',
     'patient',
+      'widget_tweaks',
+    'rest_framework',
      
 ]
 
