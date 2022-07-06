@@ -45,6 +45,8 @@ INSTALLED_APPS = [
      'bqsang',
     'donor',
     'patient',
+        'widget_tweaks',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

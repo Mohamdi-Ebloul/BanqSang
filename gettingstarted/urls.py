@@ -20,9 +20,10 @@ urlpatterns = [
     path('donor/', include('donor.urls')),
     path('patient/', include('patient.urls')),
 
+    path('', views.home_view, name='home'),
     path('logout', LogoutView.as_view(template_name='blood/logout.html'), name='logout'),
 
-    path('', views.afterlogin_view, name='afterlogin'),
+    path('afterlogin', views.afterlogin_view, name='afterlogin'),
     path('adminlogin', LoginView.as_view(template_name='blood/adminlogin.html'), name='adminlogin'),
     path('admin-dashboard', views.admin_dashboard_view, name='admin-dashboard'),
     path('admin-blood', views.admin_blood_view, name='admin-blood'),
