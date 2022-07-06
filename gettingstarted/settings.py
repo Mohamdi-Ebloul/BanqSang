@@ -29,7 +29,7 @@ SECRET_KEY = "CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be us
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ddah.herokuapp.com']
 
 
 # Application definition
@@ -85,7 +85,11 @@ WSGI_APPLICATION = "gettingstarted.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE" : "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3")
+        "NAME":"d9nj8odfk3nd2u",
+        "Host" :"ec2-3-223-169-166.compute-1.amazonaws.com",
+        "User": "hrgkcfdorxlmfu",
+        "Port": "5432",
+        "Password": "fddac447afeeafefdd97b8f77e6a8632e8e70011cee9d0bc09c72dad92db4057",
     }
 }
 
@@ -124,3 +128,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
 django_heroku.settings(locals())
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
