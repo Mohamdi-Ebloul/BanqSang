@@ -19,9 +19,9 @@
 <br><br>
 <div class="container">
     <H4 class="text-center">Historique dons</H4><br>
-    <table class="table table-light table-hover table-bordered table-striped">
+    <table class="table table-light table-hover table-bordered table-striped" style="font-size:80%;" >
         <thead class="bg-dark">
-            <tr>
+            <tr >
                 <th scope="col" style="color: rgb(192, 192, 192);">Age donneur</th>
                 <th scope="col" style="color: rgb(192, 192, 192);">Maladie(le cas échéant)</th>
                 <th scope="col" style="color: rgb(192, 192, 192);">Groupe sanguin</th>
@@ -48,7 +48,7 @@
                 {% elif t.status == 'Rejected' %}
                 <td><span class="label danger">Rejeter</span></td>
                 {% else %}
-                <td><span style="color: white;margin-left: 0px;" class="label info">En attente</span></td>
+                <td><span style="color: white;margin-left: 0px;" class="label info">En_attente</span></td>
                 {% endif %}
                 
 
