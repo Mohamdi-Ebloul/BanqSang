@@ -5,7 +5,7 @@
 <br><br>
 <div class="container">
     <H4 class="text-center">Détail donateur</H4><br>
-    <table class="table table-light table-hover table-bordered table-striped" style="font-size:80%;">
+    <table class="table table-light table-hover table-bordered table-striped" style="font-size:70%;">
         <thead class="bg-dark">
             <tr>
                 <th scope="col" style="color: rgb(192, 192, 192);">Nom</th>
@@ -24,8 +24,8 @@
                 <td>{{t.mobile}}</td>
                 
                 <td>
-                    <button class="btn btn-success btn-sm"><a  style="text-decoration: none;color: white;" href="{% url 'update-donor' t.id  %}">Edit</a> </button>
-                    <button class="btn btn-danger btn-sm"><a  style="text-decoration: none;color: white;" href="{% url 'delete-donor' t.id  %}">supprimer</a> </button>
+                    <button class="btn btn-success btn-sm"><a  style="text-decoration: none;color: white;" href="{% url 'update-donor' t.id  %}"><i class="bi bi-pencil-square"></i></a> </button>
+                    <button class="btn btn-danger btn-sm"><a  style="text-decoration: none;color: white;" href="{% url 'delete-donor' t.id  %}"><i class="bi bi-trash"></i></a> </button>
                 </td>
             </tr>
             {% endfor %}
