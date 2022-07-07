@@ -159,31 +159,21 @@ body{
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-danger">
-        <a style="color:white;" class="navbar-brand" href="/"><i class="fa fa-heartbeat"></i>&nbsp;<font face = "Comic sans MS" size ="4">Système de gestion des banques de sang</font></a>
-        
-      
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" style="color: white;" href="/logout">déconnecter &nbsp; <i class="fa fa-power-off"></i></a>
-                </li>
-                
-            </ul>
-        </div>
-      </nav>
-<br><br>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a style="text-decoration:none;" href="/"><i class="fas fa-home"></i>Accueil</a>
+    <a style="text-decoration:none;" href="/patient/make-request"><i class="fas fa-user-plus"></i>Faire une requête</a>
+    <a style="text-decoration:none;" href="/patient/my-request"><i class="fas fa-history"></i>Historique demandes</a>
+    
+    <a class="nav-link" style="color: white;" href="/logout">déconnecter &nbsp; <i class="fa fa-power-off"></i></a>
+  
+  </div>
+  
+  <nav class="openbtn" onclick="openNav()" style="font-size: 250%;">&nbsp;&nbsp;&nbsp; &#9776;  <a style="color:white;" class="navbar-brand" href="/" ><i class="fa fa-heartbeat"></i>&nbsp;<font face = "Comic sans MS" size ="3">Système gestion banques sang</font></a>
+  </nav>
+  
 <div class="wrapper">
-    <div class="sidebar">
-        
-        <ul>
-            <li><a style="text-decoration:none;" href="/"><i class="fas fa-home"></i>Home</a></li>
-            <li><a style="text-decoration:none;" href="/patient/make-request"><i class="fas fa-user-plus"></i>Faire une requête</a></li>
-            <li><a style="text-decoration:none;" href="/patient/my-request"><i class="fas fa-history"></i>Historique demandes</a></li>
-
-        </ul> 
-
-    </div>
+  
     <div class="main_content">
 
 
